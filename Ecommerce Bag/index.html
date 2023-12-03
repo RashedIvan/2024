@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Bag</title>
+    <style>
+        #card{
+            padding: 10px 40px;
+            margin: 10px 20px 0px 40px;
+            font-size: 20px;
+        }
+        #wishlist{
+            padding: 10px 40px;
+            margin: 10px 20px 0px 0px;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <button id="card" onclick="hello()">Add to card</button>
+    <button id="wishlist" onclick=" card--, document.querySelector('#para').innerText = 'Your card value is:' + count--;">wishList</button>
+    <p id="para"></p>
+
+<script>
+
+let count = 0;
+
+    function hello(){
+        count+=1;
+document.querySelector("#para").innerText = "Your card value is:" + count;
+
+    }
+
+
+</script>
+</body>
+</html>
